@@ -16,7 +16,8 @@ This project encourages girls to participate in tech innovation and empowers the
 
 
 
-👉 \[Click to Open the Live Website](https://github.com/Archana-125/Tech-For-Girls-Community.git)
+👉 \[Click to Open the Live Website](https://archana-125.github.io/Tech-For-Girls-Community/
+)
 
 (\*Replace this link with your actual GitHub Pages deployment\*)
 
