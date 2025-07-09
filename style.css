@@ -1,0 +1,111 @@
+body {
+  font-family: Arial, sans-serif;
+  background: url('image.jpg') no-repeat left center fixed;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #2fb5a3;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px #00000090;
+  position: relative;
+  z-index: 1;
+}
+
+h1 {
+  text-align: center;
+  color: #000;
+}
+
+label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  font-size: 16px;
+  background-color: #1a924a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: hsl(0, 85%, 32%);
+}
+
+.hidden {
+  display: none;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #fff;
+  margin-top: 5px;
+}
+
+#shareCount {
+  margin-top: 10px;
+  color: #fff;
+}
+
+/* Floating Icons on Right Side */
+.floating-images {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 120px;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.floating-images img {
+  position: absolute;
+  width: 40px;
+  opacity: 0.6;
+  animation: floatUp 12s linear infinite;
+}
+
+.floating-images img:nth-child(1) { top: 100%; right: 10px; animation-delay: 0s; }
+.floating-images img:nth-child(2) { top: 120%; right: 30px; animation-delay: 2s; }
+.floating-images img:nth-child(3) { top: 130%; right: 50px; animation-delay: 4s; }
+.floating-images img:nth-child(4) { top: 140%; right: 20px; animation-delay: 1s; }
+.floating-images img:nth-child(5) { top: 160%; right: 40px; animation-delay: 3s; }
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) rotate(360deg);
+    opacity: 0;
+  }
+}
